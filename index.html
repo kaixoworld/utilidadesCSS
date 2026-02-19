@@ -14,7 +14,6 @@
     --muted: #888880;
     --accent1: #d48a0a;
     --accent3: #1a9e97;
-    --accent4: #7c5cbf;
     --accent5: #1a9a6e;
   }
 
@@ -150,7 +149,6 @@
   }
 
   .badge-anim  { background: rgba(78,205,196,0.15); color: var(--accent3); }
-  .badge-fw    { background: rgba(167,139,250,0.15); color: var(--accent4); }
   .badge-util  { background: rgba(52,211,153,0.15);  color: var(--accent5); }
 
   .card-desc {
@@ -204,6 +202,13 @@
     from { opacity: 0; }
     to   { opacity: 1; }
   }
+
+  .animVista{
+    border-color: var(--accent3);
+  }
+  .utilVista{
+    border-color: var(--accent5);
+  }
 </style>
 </head>
 <body>
@@ -223,7 +228,7 @@
 
   <div class="collage">
 
-    <div class="card" data-type="anim">
+    <div class="card animVista" data-type="anim">
       <div class="card-header">
         <span class="card-name">Animate.css</span>
         <span class="card-badge badge-anim">Animación</span>
@@ -271,7 +276,7 @@
       <a class="card-url" href="https://ianlunn.github.io/Hover/" target="_blank">→ ianlunn.github.io/Hover</a>
     </div>
 
-    <div class="card" style="--accent-color:var(--accent3)">
+    <div class="card animVista" style="--accent-color:var(--accent3)">
       <div class="card-header">
         <span class="card-name">CSShake</span>
         <span class="card-badge badge-anim">Animación</span>
@@ -293,7 +298,7 @@
 
   <div class="collage">
 
-    <div class="card" style="--accent-color:var(--accent5)">
+    <div class="card utilVista" style="--accent-color:var(--accent5)">
       <div class="card-header">
         <span class="card-name">Normalize.css</span>
         <span class="card-badge badge-util">Utilidad</span>
@@ -331,7 +336,7 @@
     <div class="card" style="--accent-color:var(--accent3)">
       <div class="card-header">
         <span class="card-name">CSS Buttons</span>
-        <span class="card-badge badge-anim">Animación</span>
+        <span class="card-badge badge-anim">Utilidad</span>
       </div>
       <p class="card-desc">Damos personalidad a nuestros botones.Si lo usamos, lo indicamos :)</p>
       <div class="card-tags">
